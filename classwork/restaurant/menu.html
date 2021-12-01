@@ -3,67 +3,91 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Brackets and Quotes</title>
+         <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Outfit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/restaurantStyles.css">
     </head>
 
     <body>
 
         <header>
-            <h3>Menu</h3>
+            <h3 class="tabname">Menu</h3>
             <hr>
-            <h1>Brackets and Quotes</h1>
+            <h1 style="text-align: center">Brackets and Quotes</h1>
             <hr>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>
+                <a class="btn btn-primary" href="index.html" role="button">Home</a>
+                <a class="btn btn-primary" href="menu.html" role="button">Menu</a>
+                <a class="btn btn-primary" href="contact.html" role="button">Contact Us</a>
             </nav>
             <hr>
         </header>
+        <style>
+            h1,h2{
+                color: white;
+            }
+            p{
+                color: white
+            }
+        </style>
+        <main style="background-color: #404040; ">
+            <div class="container">
+                <div class="row">
+                    <div class="menu-item col-lg-4 col-sm-12">
+                        <h2>Green Bean Crispers</h2>
+                        <p>A shareable stack of green beans, battered, seasoned and lightly fried. Served with two sauces, cool and creamy BBQ bacon ranch and a zesty horseradish</p>
+                        <p>$7.99</p>
+    
+                    </div>
+                    <div class="menu-item col-lg-4 col-sm-12">
+                        <h2>Chicken Quesadilla Grande</h2>
+                        <p>Chipotle spice is nice when it comes on grilled chicken, melted cheese, crisp bacon, freshly-made pico de gallo and a hint of chipotle pepper all tucked inside two large flour tortillas</p>
+                        <p>$12.50</p>
+                    </div>
+                    <div class="menu-item col-lg-4 col-sm-12">
+                        <h2>Mozzarella Sticks</h2>
+                        <p>Golden fried and served with a tasty marinara sauce</p>
+                        <p>$6.99</p>
+                    </div>
+                </div>
+            </div>
 
-        <main>
-            <table>
-                <tr>
-                    <th>Green Bean Crispers</th>
-                    <th>Chicken Quesadilla Grande</th>
-                    <th>Mozzarella Sticks</th>
-                </tr>
-                <tr>
-                    <td>A shareable stack of green beans, battered, seasoned and lightly fried. Served with two sauces, cool and creamy BBQ bacon ranch and a zesty horseradish</td>
-                    <td>Chipotle spice is nice when it comes on grilled chicken, melted cheese, crisp bacon, freshly-made pico de gallo and a hint of chipotle pepper all tucked inside two large flour tortillas</td>
-                    <td>Golden fried and served with a tasty marinara sauce</td>
-                </tr>
-                <tr>
-                    <td>$7.99</td>
-                    <td>$12.50</td>
-                    <td>$6.99</td>
-                </tr>
-            </table><br>
-            <table>
-                <tr>
-                    <th>Queso Blanco</th>
-                    <th>Spinach and Artichoke Dip</th>
-                    <th>Cheeseburger Sliders</th>
-                </tr>
-                <tr>
-                    <td>Creamy white spicy queso blended with fresh tomatoes, red onion, cilantro and roasted poblanos. Served with warm tortilla chips</td>
-                    <td>A warm crock of creamy spinach, tender artichokes, and melted cheeses, served with freshly-made spicy chipotle lime salsa and tortilla chips</td>
-                    <td>Three juicy burgers topped with american cheese, onions and signature burger sauce on toasted mini buns. Served with fries</td>
-                </tr>
-                <tr>
-                    <td>$4.99</td>
-                    <td>$5.99</td>
-                    <td>$13.99</td>
-                </tr>
-            </table>
+            <div class="container">
+                <div class="row">
+                    <div class="menu-item col-lg-4 col-sm-12">
+                        <h2>Queso Blanco</h2>
+                        <p>Creamy white spicy queso blended with fresh tomatoes, red onion, cilantro and roasted poblanos. Served with warm tortilla chips</p>
+                        <p>$4.99</p>
+                    </div>
+                    <div class="menu-item col-lg-4 col-sm-12">
+                        <h2>Spinach and Artichoke Dip</h2>
+                        <p>A warm crock of creamy spinach, tender artichokes, and melted cheeses, served with freshly-made spicy chipotle lime salsa and tortilla chips</p>
+                        <p>$5.99</p>
+                    </div>
+                    <div class="menu-item col-lg-4 col-sm-12">
+                        <h2>Cheeseburger Sliders</h2>
+                        <p>Three juicy burgers topped with american cheese, onions and signature burger sauce on toasted mini buns. Served with fries</p>
+                        <p>$13.99</p>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
-        <footer>
+        <footer style="position: absolute; bottom: 0; width: 100%">
             <hr>
-            <h3>1234 Main Street, Chicago, IL, 60606</h3>
-            <h3>(555)555-5555</h3>
+            <h3 style="text-align:center;">1234 Main Street, Chicago, IL, 60606</h3>
+            <h3 style="text-align:center;">(555)555-5555</h3>
         </footer>
         
+         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>

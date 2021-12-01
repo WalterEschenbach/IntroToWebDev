@@ -3,45 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Brackets and Quotes</title>
+         <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Outfit&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles/restaurantStyles.css">
     </head>
 
     <body>
-
+        <style>
+            h1{
+                color: white;
+            }
+        </style>
         <header>
-            <h3>Home Page</h3>
+            <h3 class="tabname">Home Page</h3>
             <hr>
-            <h1>Brackets and Quotes</h1>
+            <h1 style="text-align: center">Brackets and Quotes</h1>
             <hr>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>
+                <a class="btn btn-primary" href="index.html" role="button">Home</a>
+                <a class="btn btn-primary" href="menu.html" role="button">Menu</a>
+                <a class="btn btn-primary" href="contact.html" role="button">Contact Us</a>
             </nav>
             <hr>
         </header>
 
-        <main>
-            <img src="./images/restaurant1.jpg" alt="main bar area of restaurant">
+        <main style="width: 40%; display: block; margin: auto;">
+            <img src="./images/restaurant1.jpg" alt="main bar area of restaurant" style="display: block; margin: auto; width: 100%">
             <p>Restaurant Description</p>
             <p>At Brackets and Quotes, we’re serving up more than pizza or burgers. In fact, Brackets and Quotes Famous leaf tar tar is one of our unexpected specialties. Reminiscent of butcher shops back in the day, each slow-smoked, sizzling prime chop measures seven-fingers high. Our signature recipe, that we have perfected for more than four decades, is rubbed with a secret blend of seasonings, cured and roasted on a rotisserie with pecan wood for up to six hours before it’s topped with B's and Q's signature herb-garlic butter, then carved tableside.</p>
             <h2><strong>Read a recent review!</strong></h2>
-            <a href="https://www.google.com/search?q=kellys+pub+chicago&oq=kellys+pub+chicago&aqs=chrome..69i57.5944j0j4&sourceid=chrome&ie=UTF-8#lrd=0x880fd31bf4218bc7:0x1d64c70f465326f7,1,,,"
+            <a 
+               class="external-link"
+               href="https://www.google.com/search?q=kellys+pub+chicago&oq=kellys+pub+chicago&aqs=chrome..69i57.5944j0j4&sourceid=chrome&ie=UTF-8#lrd=0x880fd31bf4218bc7:0x1d64c70f465326f7,1,,,"
                target="_blank">
                 4-star taste,
             </a>
-            <a href="https://www.yelp.com/biz/billy-goat-tavern-chicago-chicago"
+            <a 
+               class="external-link"
+               href="https://www.yelp.com/biz/billy-goat-tavern-chicago-chicago"
                target="_blank">
                 1-star price
             </a>
         </main>
 
-        <footer>
+        <footer style="position: absolute; bottom: 0; width: 100%">
             <hr>
-            <h3>1234 Main Street, Chicago, IL, 60606</h3>
-            <h3>(555)555-5555</h3>
+            <h3 style="text-align:center;">1234 Main Street, Chicago, IL, 60606</h3>
+            <h3 style="text-align:center;">(555)555-5555</h3>
         </footer>
         
+         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
