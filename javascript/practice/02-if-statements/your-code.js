@@ -7,8 +7,8 @@
 
 // You are given four variables with numeric values.
 
-var kidsWhoWantToSwim = 25;   // number of kids who want to swim
-var kidsWhoWantDoArchery = 5; // number of kids who want to do archery
+var kidsWhoWantToSwim = 24;   // number of kids who want to swim
+var kidsWhoWantDoArchery = 4; // number of kids who want to do archery
 var totalSwimmers = 0;        // number of kids who are actually swimming in the afternoon
 var totalArchers = 0;         // number of kids who are actually doing archery in the afternoon
 
@@ -16,11 +16,20 @@ var totalArchers = 0;         // number of kids who are actually doing archery i
 // If kidsWhoWantToSwim is even,
 // - assign the value of kidsWhoWantToSwim to totalSwimmers
 // - assign the value of kidsWhoWantDoArchery to totalArchers
+if(kidsWhoWantToSwim%2 === 0){
+    totalSwimmers = kidsWhoWantToSwim;
+    totalArchers = kidsWhoWantDoArchery;
+}
 
 // If kidsWhoWantToSwim is odd, then at least one kid doesn't have a swimming buddy. 
 // To avoid leaving anyone out, we'll just do archery that afternoon.
 // - add the values of kidsWhoWantToSwim and kidsWhoWantDoArchery and assign the result to totalArchers
 // - totalSwimmers should remain at 0
+
+if(kidsWhoWantToSwim%2 !== 0){
+    totalArchers = kidsWhoWantDoArchery + kidsWhoWantToSwim;
+}
+
 
 // Hint: ------------------
 // You can use the modulo operator (%) to determine if a number is even. 
@@ -51,6 +60,11 @@ var totalArchers = 0;         // number of kids who are actually doing archery i
 // Add additional if/else statements to handle negative numbers.
 // If either kidsWhoWantToSwim or kidsWhoWantDoArchery is negative, it's an invalid setup.
 // Set both totatSwimmers and totalArchers to 0.
+
+if(kidsWhoWantDoArchery <0 || kidsWhoWantToSwim<0){
+    totalArchers = 0;
+    totalSwimmers  = 0;
+}
 
 // This code prints your variables to the JavaScript console.
 console.log("kidsWhoWantToSwim = %s", kidsWhoWantToSwim);
