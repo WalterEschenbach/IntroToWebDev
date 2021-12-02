@@ -22,6 +22,10 @@ for (var n = 1; n <= 7; n++) {
 console.log("FOR ONE TO TEN");
 // Write your code here:
 
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+    
+}
 
 
 // 2. COUNT BY TWOS FROM TWO TO TWELVE
@@ -40,7 +44,12 @@ console.log("FOR ONE TO TEN");
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
 
-
+for (let i = 2; i <= 12; i++) {
+    if(i%2===0){
+        console.log(i)
+    }
+    
+}
 
 // 3. COUNT BACKWARD FROM SIX
 // ==========================
@@ -59,7 +68,10 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
 
-
+for (let i = 6; i >= 0; i--) {
+    console.log(i)
+    
+}
 
 // 4. SUM EVENS
 // ============
@@ -75,8 +87,16 @@ var sum = 0;    // We add even numbers to this variable.
 // When limit equals 10, sum equals 30 (2 + 4 + 6 + 8 + 10).
 // When limit equals 8, sum equals 20 (2 + 4 + 6 + 8).
 // What happens if you set limit to a negative number?
+
+// Answer: if limit is set to negative, sum will always be zero as the counter we declared and initialized will never meet the test condition.
 console.log("SUM EVENS");
 // Write your code here:
+
+for (let i = 0; i <= limit; i++) {
+    if(i%2===0){
+        sum += i;
+    }    
+}
 
 console.log("limit = %s, sum = %s", limit, sum);
 
@@ -84,7 +104,7 @@ console.log("limit = %s, sum = %s", limit, sum);
 // =========================
 // You're given two variables with numeric values:
 
-var winniesFavoriteNumber = 53; // Winnie's favorite number
+var winniesFavoriteNumber = 41; // Winnie's favorite number
 var kaisFavoriteNumber = 44;    // Kai's favorite number
 
 // Write a for loop that loops until it reaches either winniesFavoriteNumber 
@@ -95,15 +115,33 @@ var kaisFavoriteNumber = 44;    // Kai's favorite number
 console.log("FIND A FAVORITE NUMBER");
 // Write your code here:
 
-
+for (let i = 0; i <= Math.min(winniesFavoriteNumber, kaisFavoriteNumber); i++) {
+    if(winniesFavoriteNumber===i){
+        console.log(winniesFavoriteNumber)
+    }else if(kaisFavoriteNumber===i){
+        console.log(kaisFavoriteNumber)
+    }
+    
+}
 
 // CHALLENGE: WHILE LOOPS
 // ======================
 // Try solving the five tasks above with a while loop in place of a for loop.
-
-
-
-
+var j=1
+while(j<=7){
+console.log(j)
+j++
+}
+var k = 0;
+while(k<=12){
+    console.log(k)
+    k+=2;
+}
+var l = 6;
+while(l>=0){
+    console.log(l)
+    l--;
+}
 
 
 /**********************************
