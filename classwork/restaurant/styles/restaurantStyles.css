@@ -23,6 +23,9 @@ h6 {
 	font-family: var(--secondary-font), Arial, Helvetica, sans-serif;
 	color: var(--primary-font-color);
 }
+h1 {
+	color: var(--secondary-font-color);
+}
 p {
 	font-family: var(--secondary-font-color), Verdana, Geneva, Tahoma,
 		sans-serif;
@@ -41,6 +44,9 @@ header {
 }
 .tabname {
 	color: var(--secondary-font-color);
+}
+.required {
+	font-weight: 900;
 }
 /* Style external links (Including the link to the review on the home page) so that:
 - The default version of the hypertext uses a different color than the body text and is underlined.*/
