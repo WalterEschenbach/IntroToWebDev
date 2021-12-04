@@ -1,18 +1,34 @@
 <!DOCTYPE html>
+
+<!-- 
+Name: Walter Eschenbach
+Date Created: 12/2/2021
+Most recent revision: 12/4/2021 
+-->
+
 <html lang="en">
+
+
     <head>
+        <!--MetaData-->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+        <!--Title-->
         <title>Brackets and Quotes</title>
-         <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!--Fonts  https://fonts.google.com/-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Outfit&display=swap" rel="stylesheet">
+        
+        <!--External Style Sheet-->
         <link rel="stylesheet" href="./styles/restaurantStyles.css">
-   
-    </head>
+      </head>
 
     <body>
 
@@ -21,6 +37,7 @@
             <hr>
             <h1 style="text-align: center">Brackets and Quotes</h1>
             <hr>
+            <!--Navigation-->
             <nav>
                 <ul class="nav nav-tabs" >
                     <li class="nav-item" >
@@ -38,6 +55,9 @@
                   </ul>
             </nav>
         </header>
+
+        <!--Internal Styles-->
+        <!--Menu page has a unique format for text given the darker background.-->
         <style>
             h1,h2{
                 color: white;
@@ -45,56 +65,35 @@
             p{
                 color: white
             }
+            main{
+                background-color: #404040;
+            }
         </style>
-        <main class="mt-3" style="background-color: #404040; ">
+        
+        <!--Main-->
+        <main class="mt-3">
+
+            <!--Menu Items-->
             <div class="container">
-                <div class="row text-center">
-                    <div class="menu-item col-lg-4 col-md-6 col-sm-12">
-                        <h2 class="text-center">Green Bean Crispers</h2>
-                        <p>A shareable stack of green beans, battered, seasoned and lightly fried. Served with two sauces, cool and creamy BBQ bacon ranch and a zesty horseradish</p>
-                        <p><strong>$7.99</strong></p>
-    
-                    </div>
-                    <div class="menu-item col-lg-4 col-md-6 col-sm-12">
-                        <h2>Chicken Quesadilla Grande</h2>
-                        <p>Chipotle spice is nice when it comes on grilled chicken, melted cheese, crisp bacon, freshly-made pico de gallo and a hint of chipotle pepper all tucked inside two large flour tortillas</p>
-                        <p><strong>$12.50</strong></p>
-                    </div>
-                    <div class="menu-item col-lg-4 col-md-6 col-sm-12">
-                        <h2>Mozzarella Sticks</h2>
-                        <p>Golden fried and served with a tasty marinara sauce</p>
-                        <p><strong>$6.99</strong></p>
-                    </div>
-                    <div class="menu-item col-lg-4 col-md-6 col-sm-12">
-                        <h2>Queso Blanco</h2>
-                        <p>Creamy white spicy queso blended with fresh tomatoes, red onion, cilantro and roasted poblanos. Served with warm tortilla chips</p>
-                        <p><strong>$4.99</strong></p>
-                    </div>
-                    <div class="menu-item col-lg-4 col-md-6 col-sm-12">
-                        <h2>Spinach and Artichoke Dip</h2>
-                        <p>A warm crock of creamy spinach, tender artichokes, and melted cheeses, served with freshly-made spicy chipotle lime salsa and tortilla chips</p>
-                        <p><strong>$5.99</strong></p>
-                    </div>
-                    <div class="menu-item col-lg-4 col-md-6 col-sm-12">
-                        <h2>Cheeseburger Sliders</h2>
-                        <p>Three juicy burgers topped with american cheese, onions and signature burger sauce on toasted mini buns. Served with fries</p>
-                        <p><strong>$13.99</strong></p>
-                    </div>
-                </div>
+                <div id="menu-row" class="row text-center"></div>
             </div>
 
         </main>
 
-        <footer style="width: 100%">
+
+
+        <footer>
             <hr>
             <h3 style="text-align:center;">1234 Main Street, Chicago, IL, 60606</h3>
             <h3 style="text-align:center;">(555)555-5555</h3>
         </footer>
         
-         <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-         <script src="./scripts/script.js" type="text/javascript"></script>
+
+
+        <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="./scripts/renderMenu.js" type="text/javascript"></script>
     </body>
 </html>

@@ -67,6 +67,7 @@ header {
 	text-decoration: none;
 }
 footer {
+	width: 100%;
 	background-color: var(--primary-color);
 }
 footer h2,
