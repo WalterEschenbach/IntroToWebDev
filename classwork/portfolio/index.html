@@ -12,6 +12,38 @@ Most recent revision: 11/30/2021
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walter's Portfolio</title>
+    <style>
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        table, th, td {
+            border: 1px solid #0d1f2d;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+        }
+
+        tr {
+            height: 30px;
+        } 
+
+        th {
+            background-color: #546a7b;
+            color: #f2eded;
+        } 
+
+        tbody tr:nth-child(odd) {
+            background-color: #e4c3ad; 
+        }
+    </style>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
 </head>
 <body>
     <main>
@@ -43,26 +75,30 @@ Most recent revision: 11/30/2021
                 <img src="./images/chicago.jpg" alt="Image of Lasalle street Chicago">
                 <table>
                     <caption>Employment History</caption>
-                    <tr>
-                        <th>Years of Employment</th>
-                        <th>Title</th>
-                        <th>Company</th>
-                    </tr>
-                    <tr>
-                        <td>2020 - 2021</td>
-                        <td>Intern</td>
-                        <td>Outspoke.io</td>
-                    </tr>
-                    <tr>
-                        <td>2017 - 2019</td>
-                        <td>Consultant</td>
-                        <td>Deloitte</td>
-                    </tr>
-                    <tr>
-                        <td>2016 - 2017</td>
-                        <td>Financial Analyst</td>
-                        <td>33 Management</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Years of Employment</th>
+                            <th>Title</th>
+                            <th>Company</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2020 - 2021</td>
+                            <td>Intern</td>
+                            <td>Outspoke.io</td>
+                        </tr>
+                        <tr>
+                            <td>2017 - 2019</td>
+                            <td>Consultant</td>
+                            <td>Deloitte</td>
+                        </tr>
+                        <tr>
+                            <td>2016 - 2017</td>
+                            <td>Financial Analyst</td>
+                            <td>33 Management</td>
+                        </tr>
+                    </tbody>
                 </table>
             </article>
         
