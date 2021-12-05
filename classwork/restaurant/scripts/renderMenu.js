@@ -38,7 +38,7 @@ MENU.forEach(item=>{
     itemHTML += 
     `
     <div class="menu-item col-lg-4 col-md-6 col-sm-12">
-        <h2 class="text-center">${item.name}</h2>
+        <h3 class="text-center">${item.name}</h3>
         <p>${item.description}</p>
         <p><strong>$${item.price}</strong></p>
     </div><!--Item1-->
