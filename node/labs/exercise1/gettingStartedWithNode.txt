@@ -1,0 +1,10 @@
+1. Node version 12.14.1 // ran node -v in terminal
+1. NPM version 6.14.2 // ran npm -v in terminal
+
+2. ./app.js // file created in this same directory
+
+3. node app.js in the bash terminal // printed "hello node" to console
+
+
+
+1.
